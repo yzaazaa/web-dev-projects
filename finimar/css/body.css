@@ -1,0 +1,35 @@
+:root {
+  --fs-h2: 1.5vw;
+}
+
+.acroche {
+  background: rgba(0,0,0,0);
+  font-size: var(--fs-h2);
+  font-family: sora;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+#acroche1 {
+  line-height: 0;
+}
+#acroche3 {
+  line-height: 0;
+}
+
+
+.img{ 
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}

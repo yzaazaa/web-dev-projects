@@ -1,0 +1,157 @@
+@media (min-width: 320px,max-width: 767px) {
+  .nav__links li a {
+    font-size: 0.5em;
+  }
+}
+
+#finimar-logo-header {
+  width: 4vw;
+  height: auto;
+  margin: 0.5rem;
+}
+
+* {
+  background: #24252a;
+}
+
+.header-wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li,
+a {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: clamp(0.5rem, 1.2vw, 1rem);
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  padding: 20px;
+  animation-name: navbar_transition;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+.nav__links li a:hover {
+  color: #80ba27;
+  background-color: #2f3037;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 1760px) {
+  #finimar-logo-header {
+    width: 5vw;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav__links {
+    display: none;
+    width: 100%;
+    position: relative;
+    right: 3.3vw;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav__links li {
+    text-align: center;
+    display: inline-flex;
+    transform-origin: top center;
+  }
+
+  .nav__links li a {
+    padding: 1.5rem;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+  }
+
+  .nav__links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: hamburger-menu;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .nav__links.active li a:hover {
+    color: #80ba27 !important;
+    background-color: #2f3037;
+  }
+}
+
+@keyframes navbar_transition {
+  50% {
+    display: inline-block;
+    color: rgba(237, 240, 241, 0.25);
+  }
+  75% {
+    color: rgba(237, 240, 241, 0.5);
+  }
+  100% {
+    color: rgb(237, 240, 241);
+  }
+}
+
+@keyframes hamburger-menu {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  30% {
+    transform: rotateX(-80deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
