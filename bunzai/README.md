@@ -1,0 +1,1 @@
+Web application for managing a restaurant: Developed an application that allows to manage the reservations of a restaurant, with the possibility to add, modify or delete a reservation, and an administrator page. (Backend: PHP / Frontend: HTML5, CSS3)
