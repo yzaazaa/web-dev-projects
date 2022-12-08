@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunzai - Best burgers in town !</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel = "icon" href = 
+"assets/images/burger.png" 
+        type = "image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="label"> 
+            <h1>
+                <a href="index.html" class="logo">
+                <img class="logo" src="assets/images/burger.png" width="35px" />    
+                Bunza&iuml;
+                </a>
+            </h1>
+        </div>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-section">
+        <div class="main-text">
+            <h3>Delight your Best. </h3>
+            <h2>Steak Burger</h2>
+            <p>We are dedicated to the safety of our guests and employees and have updated our safety measures. Lorem ipsum dolor sit amet elit. Provident.
+                fugit odit? Fugit ipsam. Sed ac ex. Nam mauris velit, ac
+                cursus quis, leo.</p>
+            <button class="button-1" role="button">See menu</button>
+            <button class="button-23" role="button">Book a table</button>
+        </div>
+    </div>
+    <div class="about-section">
+        
+    </div>
+    
+    <div class="booking-section container">
+        <div class="split left">
+            <h3 class="heading heading-1">Wanna taste one of the best burgers in your life?<br>Fill this form in order to book a table!</h3>
+            <form action="Adduser.php " enctype="multipart/form-data" method="POST">
+                <!--  -->
+                <div class="group">      
+                    <input type="text" name="prenom" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>First name</label>
+                    
+                </div>
+                <div class="group">      
+                    <input type="text" name="nom" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Last name</label>
+                </div>
+                <div class="group group-2">      
+                    <input type="tel" name="telephone" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Phone</label>
+                </div>
+                <div class="group">      
+                    <input type="datetime-local" name="dateetheure" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="group">      
+                    <input type="email" name="email" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>E-mail</label>
+                </div>
+                <button type="submit" class="button-1">Submit</button>
+            </form>
+        </div>
+        <div class="split right">
+            <img src="assets/images/burger1.png" class="burger1">
+        </div>
+    </div>
+</body>
+</html>

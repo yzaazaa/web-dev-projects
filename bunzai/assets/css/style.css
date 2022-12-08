@@ -1,0 +1,330 @@
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #fbaf32;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --heading-color: #3B3663;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+}
+
+*, ::before,
+::after {
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 22%;
+    background: url(../images/banner-top.png);
+    background-size: cover;
+    z-index: 0;
+    max-height: 80px;
+}
+
+.logo {
+    font-size: 37px;
+    font-weight: 700;
+
+}
+
+.label {
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all .5s ease;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: .85px;
+}
+
+.nav__links li a:hover{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.main-text {
+    width: 70%;
+    padding: 10% 22%;
+}
+
+
+.main-section:nth-of-type(1) {
+    width: 100%;
+    background-image: url(../images/banner-bottom.png);
+    background-size: cover;
+    z-index: -1;
+    min-height: calc(100vh - 130px);
+}
+
+h3{
+    color: white;
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: .5rem;
+    line-height: 55px;
+    align-items: center;
+}
+
+h2 {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    font-family: 'Dosis', sans-serif;
+    font-size: 100px;
+}
+
+.button-1 {
+    top: 4vh;
+    background-color: #fbaf32;
+    border-color: #fbaf32;
+    border-radius: 6px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #212529;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    height: 60px;
+    line-height: 28px;
+    list-style: none;
+    outline: none;
+    padding: 12px 35px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+
+.button-23 {
+    top: 4vh;
+    left: 1vw;
+    top: 4vh;
+    left: 1vw;
+    background-color: transparent;
+    border: 1px solid #fbaf32;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #fbaf32;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Dosis", sans-serif;
+    font-size: 14px;
+    height: 60px;
+    width: 130px;
+    line-height: 28px;
+    list-style: none;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+
+.split {
+    z-index: 1;
+    top: 0;
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.left {
+    left: 0;
+    float:left;
+    width: 28%;
+}
+
+.right {
+    width: 50%;
+    right: 0;
+    float: right;
+    margin-right: 20%;
+}
+
+.burger1 {
+    padding-top: 10px;
+    height: 703px;
+}
+
+.container 		{ 
+    font-family:'Roboto';
+    width:100%; 
+    margin:30px 22% 0; 
+    display:block; 
+    background:#FFF;
+    padding:10px 50px 50px;
+}
+
+.heading{
+    color: var(--heading-color);
+    margin-bottom: 50px;
+}
+
+
+.group{ 
+    position:relative; 
+    margin-bottom:45px; 
+}
+
+input{
+    content: "";
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid var(--primary);
+    color: #000;
+}
+
+input:focus { 
+    outline:none; 
+}
+
+.group-2 {
+    margin-bottom: 20px;
+}
+
+  /* LABEL ======================================= */
+
+label {
+    color:#999; 
+    font-size:18px;
+    font-weight:500;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+    /* active state */
+
+input:focus ~ label, input:valid ~ label {
+    top:-20px;
+    font-size:14px;
+    color:#1a1a1a;
+}
+
+  /* BOTTOM BARS ================================= */
+
+.bar{ 
+    position:relative; 
+    display:block; 
+    width:300px; 
+}
+
+.bar:before, .bar:after{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:var(--primary); 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+.bar:before {
+    left:50%;
+}
+
+.bar:after {
+    right:50%; 
+}
+
+  /* active state */
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+  /* HIGHLIGHTER ================================== */
+.highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+    /* active state */
+
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+  /* ANIMATIONS ================ */
+
+@-webkit-keyframes inputHighlighter {
+    from { background:var(--primary); }
+    to 	{ width:0; background:transparent; }
+}
+
+@-moz-keyframes inputHighlighter {
+    from { background:var(--primary); }
+    to 	{ width:0; background:transparent; }
+}
+
+@keyframes inputHighlighter {
+    from { background:var(--primary); }
+    to 	{ width:0; background:transparent; }
+}
